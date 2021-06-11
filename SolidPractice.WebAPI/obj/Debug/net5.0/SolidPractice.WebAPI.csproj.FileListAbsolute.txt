@@ -66,3 +66,10 @@ C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin
 C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\SolidPractice.DataAccess.dll
 C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\SolidPractice.DataAccess.pdb
 C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\Dapper.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\MediatR.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\CQRSBusiness.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\CQRSBusiness.pdb
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\eren_\Desktop\örnekc#\AkbankBootcampPractices\SolidPractice.WebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

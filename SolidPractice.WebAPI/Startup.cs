@@ -11,13 +11,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using SolidPractice.Business.Abstract;
 using SolidPractice.Business.Concrete;
 using SolidPractice.DataAccess.Abstract;
+using SolidPractice.DataAccess.CQRS.Abstract;
+using SolidPractice.DataAccess.CQRS.EntityFramework.Handlers.CommandHandlers;
+using SolidPractice.DataAccess.CQRS.EntityFramework.Handlers.QueryHandlers;
+using SolidPractice.DataAccess.CQRS.EntityFramework.Queries.Request.Address;
+using SolidPractice.DataAccess.CQRS.EntityFramework.Queries.Response.Address;
 using SolidPractice.DataAccess.Dapper;
 using SolidPractice.DataAccess.EntityFramework;
 using SolidPractices.Entities;
+using AddressManager = CQRSBusiness.Concrete.AddressManager;
+using IAddressService = CQRSBusiness.Abstract.IAddressService;
 
 namespace SolidPractice.WebAPI
 {
@@ -34,7 +43,12 @@ namespace SolidPractice.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(o =>
+                {
+                    //INCLUDE
+                    o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                });
 
             services.AddSwaggerGen(c =>
             {
@@ -46,10 +60,19 @@ namespace SolidPractice.WebAPI
             services.AddScoped<IEmployeeDal, DapperEmployeeRepository>();
             services.AddScoped<ISupplierDal, DapperSupplierRepository>();
 
+
+            //CQRS
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IAddressService, AddressManager>();
+            //services.AddTransient<IRequestHandler<GetAllAddressesQueryRequest, List<GetAllAddressesQueryResponse>>, GetAllAddressesQueryHandler>();
+
+
+
+            //services.AddScoped<IAddressService, AddressManager>();
             services.AddScoped<ICustomerService, CustomerManager>();
             services.AddScoped<IEmployeeService, EmployeeManager>();
             services.AddScoped<ISupplierService, SupplierManager>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

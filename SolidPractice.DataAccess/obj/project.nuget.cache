@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "s7WvsR++znMfe/1iNeIuMfxgq4m0XnYCcYfDU44zRDAPnMkhKIdkzkZGjYsCoSrTe0MxIQzpsQVJyGeDTbCs6Q==",
+  "dgSpecHash": "20NPa8mu3wcDpwDiqMjwEg7HsXj8t+QHno3E0Wg9L9RFjME5/waG6MDAq6mwl0eEuD+2TcW78v8CLNozk5GGUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\eren_\\Desktop\\örnekc#\\AkbankBootcampPractices\\SolidPractice.DataAccess\\SolidPractice.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eren_\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\eren_\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\eren_\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\eren_\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

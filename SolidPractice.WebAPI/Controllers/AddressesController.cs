@@ -23,7 +23,6 @@ namespace SolidPractice.WebAPI.Controllers
 
 
 
-
         [HttpGet]
         public IActionResult GetAll()
         {
